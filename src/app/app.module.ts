@@ -3,12 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
+import {HttpClientModule} from '@angular/common/http';
+import { from } from 'rxjs';
+import { FormsModule } from '@angular/forms';
+import { WorkWithHttpComponent } from './work-with-http/work-with-http.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    WorkWithHttpComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, FormsModule, HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

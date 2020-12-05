@@ -1,0 +1,14 @@
+<p>work-with-http works!</p>
+
+<label>Введите логин:</label>
+<input name="login" [(ngModel)]="user.login">
+<br><br>
+<label>Введите пароль:</label>
+<input name="password" [(ngModel)]="user.password">
+<br><br>
+<button (click)="submit(user)">Отправить</button>
+
+<div *ngIf="done">
+    <p>{{messageFromServer.message}}</p>
+</div>
+
